@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio</title>
+</head>
+<body>
+    <h2 style="justify-content: center; place-self: center;">Bio Data</h2>
+    <form style="display: grid;">
+        <input style="width: 50%; justify-content: center; place-self: center; height: 30px;" type="text" placeholder="First name"><br>
+        <input style="width: 50%; justify-content: center; place-self: center; height: 30px;" type="text" placeholder="Last name"><br>
+        <input style="width: 50%; justify-content: center; place-self: center; height: 30px;" type="text" placeholder="Email address"><br>
+        <input style="width: 50%; justify-content: center; place-self: center; height: 30px;" type="number" placeholder="Phone number"><br>
+        <input style="width: 50%; justify-content: center; place-self: center; height: 30px;" type="text" placeholder="Occupation"><br>
+        <form action="/submit" method="post">
+        <input style="width: 50%; justify-content: center; place-self: center; height: 30px;" type="date" id="dob" name="dob" required><br>
+
+    <select id="dropdown" name="options" style="width: 50%; justify-content: center; place-self: center; height: 30px;">
+        <option value="option4">Select Class</option>
+        <option value="option1">Software Development</option>
+        <option value="option2">Digital Marketing</option>
+        <option value="option3">Data Analytics</option>
+        <option value="option4">Product Management</option>
+        <option value="option4">AI/ML</option>
+        <option value="option4">Cyber Security</option>
+    </select>
+       
+        <span style="display: flex; width: 35%; justify-content: center; place-self: center;">
+            <h4>Sex:</h4>
+            <input style="width: 7%; justify-content: center; place-self: center; height: 30px;" type="radio" name="gender" value="male">
+            <label for="male" style="padding-top: 20px;">Male</label><br>
+            <input style="width: 7%; justify-content: center; place-self: center; height: 30px;" type="radio" name="gender" value="male">
+            <label for="female" style="padding-top: 20px;">Female</label><br>
+        </span>
+        <span style="display: flex; width: 35%; justify-content: center;place-self: center;">
+            <h4>Hobbies:</h4>
+            <input style="width: 10%; justify-content: center; place-self: center; height: 35px;" type="checkbox" name="Surfing" value="Surfing">
+            <label for="a" style="padding-top: 20px;">Surfing</label><br>
+            <input style="width: 10%; justify-content: center; place-self: center; height: 35px;" type="checkbox" name="Sewing" value="Sewing">
+            <label for="b" style="padding-top: 20px;">Sewing</label><br>
+            <input style="width: 10%; justify-content: center; place-self: center; height: 35px;" type="checkbox" name="Eating" value="Eating">
+            <label for="c" style="padding-top: 20px;">Eating</label><br>
+            <input style="width: 10%; justify-content: center; place-self: center; height: 35px;" type="checkbox" name="Dancing" value="Dancing">
+            <label for="c" style="padding-top: 20px;">Dancing</label><br>
+            <input style="width: 10%; justify-content: center; place-self: center; height: 35px;" type="checkbox" name="Sleeping" value="Sleeping">
+            <label for="c" style="padding-top: 20px;">Sleeping</label><br>
+        </span>
+        <input style="width: 30%; justify-content: center; place-self: center; height:40px;" type="file"/>
+        <input style="width: 50%; justify-content: center; place-self: center; height: 30px;" type="password" placeholder="Password"/>
+    <br>
+    <button style="width: 100px; height: 30px; justify-content: center; place-self: center; background-color: rgb(228, 160, 35);">Submit</button>
+
+        </form>
+</body>
+</html>
